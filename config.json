@@ -1,0 +1,6 @@
+{
+    "long_label_length": 20,
+    "high_entropy": 3.5,
+    "high_query_frequency": 5,
+    "risk_threshold": 50
+}
