@@ -1,0 +1,13 @@
+2026-09-24 10:01:01 client=192.168.1.10 query=google.com status=NOERROR
+2026-09-24 10:01:05 client=192.168.1.10 query=github.com status=NOERROR
+2026-09-24 10:01:10 client=192.168.1.10 query=example.com status=NOERROR
+2026-09-24 10:01:15 client=192.168.1.20 query=facebook.com status=NOERROR
+2026-09-24 10:01:20 client=192.168.1.20 query=amazon.com status=NOERROR
+2026-09-24 10:01:25 client=192.168.1.20 query=unknown-domain.test status=NXDOMAIN
+2026-09-24 10:01:30 client=192.168.1.20 query=unknown-domain.test status=NXDOMAIN
+2026-09-24 10:01:35 client=192.168.1.20 query=unknown-domain.test status=NXDOMAIN
+2026-09-24 10:01:40 client=10.0.0.15 query=x8f92k1m7q2p9z4x7.example.com status=NOERROR
+2026-09-24 10:01:45 client=10.0.0.15 query=x8f92k1m7q2p9z4x7.example.com status=NOERROR
+2026-09-24 10:01:50 client=10.0.0.15 query=x8f92k1m7q2p9z4x7.example.com status=NOERROR
+2026-09-24 10:01:55 client=10.0.0.15 query=x8f92k1m7q2p9z4x7.example.com status=NOERROR
+2026-09-24 10:02:00 client=10.0.0.15 query
