@@ -166,3 +166,11 @@ DNSGuard is an educational security analysis tool.
 
 Its detections are heuristic-based and should be treated as indicators for further investigation rather than proof of malicious activity.
 
+## 📸 Screenshots
+
+### Normal DNS Activity
+![DNS Normal Activity](dns-normal.png)
+
+### Suspicious DNS Activity Detection
+![DNS Threat Detection](dns-threat.png)
+
