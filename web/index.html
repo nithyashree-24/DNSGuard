@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DNSGuard | DNS Threat Detection</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b1220;
+            color: #e5e7eb;
+        }
+
+        header {
+            background: #111827;
+            padding: 22px 8%;
+            border-bottom: 1px solid #263244;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #22c55e;
+        }
+
+        nav {
+            margin-top: 8px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .hero {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #22c55e;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #94a3b8;
+            line-height: 1.7;
+        }
+
+        .dashboard {
+            width: 84%;
+            margin: 0 auto 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: #111827;
+            border: 1px solid #263244;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .section {
+            width: 84%;
+            margin: auto;
+            padding-bottom: 60px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+        }
+
+        .threat {
+            background: #111827;
+            border: 1px solid #7f1d1d;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .threat-title {
+            color: #f87171;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .threat p {
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        .screenshots {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .screenshots img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #263244;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+            border-top: 1px solid #263244;
+        }
+
+        @media (max-width: 800px) {
+            .dashboard {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .screenshots {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🛡️ DNS<span>Guard</span></div>
+    <nav>DNS Threat Detection & Security Analysis</nav>
+</header>
+
+<section class="hero">
+    <h1>DNS <span>Threat Detection</span></h1>
+
+    <p>
+        DNSGuard is a lightweight cybersecurity dashboard that analyzes
+        DNS query activity and highlights potentially suspicious behavior
+        using entropy, query frequency and DNS response indicators.
+    </p>
+</section>
+<section class="section">
+
+    <h2>🔍 About DNSGuard</h2>
+
+    <div class="threat">
+
+        <p>
+            DNSGuard is a Python-based security analysis tool designed
+            to examine DNS query logs and identify potentially suspicious
+            DNS activity.
+        </p>
+
+        <p>
+            It analyzes domain characteristics, query frequency, entropy
+            and DNS response behavior to generate a simple risk assessment
+            for security monitoring.
+        </p>
+
+    </div>
+
+</section>
+<section class="section">
+
+    <h2>🛡️ Detection Features</h2>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>LONG DNS LABELS</h3>
+            <p>Identifies unusually long DNS labels that may indicate encoded or hidden data.</p>
+        </div>
+
+        <div class="card">
+            <h3>HIGH ENTROPY</h3>
+            <p>Measures domain randomness to identify potentially suspicious DNS patterns.</p>
+        </div>
+
+        <div class="card">
+            <h3>QUERY FREQUENCY</h3>
+            <p>Detects repeated DNS requests that may indicate automated or abnormal activity.</p>
+        </div>
+
+        <div class="card">
+            <h3>RISK SCORING</h3>
+            <p>Combines multiple indicators to generate a simple security risk score.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="section">
+
+    <h2>⚙️ How DNSGuard Works</h2>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>01 — LOG INPUT</h3>
+            <p>DNSGuard reads DNS query logs containing client, domain and response information.</p>
+        </div>
+
+        <div class="card">
+            <h3>02 — ANALYSIS</h3>
+            <p>Domain length, entropy, query frequency and DNS responses are analyzed.</p>
+        </div>
+
+        <div class="card">
+            <h3>03 — RISK SCORING</h3>
+            <p>Detected indicators contribute to a risk score from 0 to 100.</p>
+        </div>
+
+        <div class="card">
+            <h3>04 — ALERT</h3>
+            <p>Suspicious activity is highlighted for further security investigation.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="section">
+
+    <h2>📊 Security Overview</h2>
+
+</section>
+<section class="dashboard">
+
+    <div class="card">
+        <h3>TOTAL DNS QUERIES</h3>
+        <div class="number">12</div>
+    </div>
+
+    <div class="card">
+        <h3>UNIQUE DOMAINS</h3>
+        <div class="number">7</div>
+    </div>
+
+    <div class="card">
+        <h3>UNIQUE CLIENTS</h3>
+        <div class="number">3</div>
+    </div>
+
+    <div class="card">
+        <h3>SUSPICIOUS DOMAINS</h3>
+        <div class="number">1</div>
+    </div>
+
+</section>
+<section class="section">
+
+    <h2>🧰 Technologies Used</h2>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>PYTHON</h3>
+            <p>Core programming language used for DNS log analysis and threat detection.</p>
+        </div>
+
+        <div class="card">
+            <h3>REGEX</h3>
+            <p>Used to extract DNS queries, client information and response status from logs.</p>
+        </div>
+
+        <div class="card">
+            <h3>JSON</h3>
+            <p>Used for configurable detection thresholds and risk analysis settings.</p>
+        </div>
+
+        <div class="card">
+            <h3>HTML & CSS</h3>
+            <p>Used to build the DNSGuard security dashboard and project interface.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="section">
+
+    <h2>⚠️ Threat Analysis</h2>
+
+    <div class="threat">
+
+        <div class="threat-title">
+            POSSIBLE DNS TUNNELING / SUSPICIOUS ACTIVITY
+        </div>
+
+        <p>
+            <strong>Domain:</strong>
+            x8f92k1m7q2p9z4x7a3b.example.com
+        </p>
+
+        <p>
+            <strong>Client:</strong> 10.0.0.15
+        </p>
+
+        <p>
+            <strong>Entropy:</strong> 3.92
+        </p>
+
+        <p>
+            <strong>Risk Score:</strong> 80/100
+        </p>
+
+        <p>
+            <strong>Indicators:</strong>
+            Long DNS label, high entropy and repeated query activity.
+        </p>
+
+    </div>
+
+</section>
+<section class="section">
+
+    <h2>🔒 Security Note</h2>
+
+    <div class="threat">
+
+        <p>
+            DNSGuard uses heuristic-based analysis to identify
+            potentially suspicious DNS activity.
+        </p>
+
+        <p>
+            A high risk score indicates that further investigation
+            may be required. It does not by itself confirm that a
+            domain or client is malicious.
+        </p>
+
+        <p>
+            DNSGuard is designed as a security monitoring and
+            analysis tool for educational and defensive purposes.
+        </p>
+
+    </div>
+
+</section>
+<section class="section">
+
+    <h2>📊 Analysis Output</h2>
+
+    <div class="screenshots">
+
+        <img src="../dns-normal.png" alt="Normal DNS Activity">
+
+        <img src="../dns-threat.png" alt="DNS Threat Detection">
+
+    </div>
+
+</section>
+
+<footer>
+    DNSGuard • Python Cybersecurity Project
+</footer>
+
+</body>
+</html>
